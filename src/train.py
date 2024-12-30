@@ -24,10 +24,10 @@ from ray.train import Checkpoint
 from segment_anything import sam_model_registry
 
 # Local imports
-from dataset import (
+from src.dataset import (
     read_nrrd_files, AortaDataset2D
 )
-from model import MedSAM
+from src.model import MedSAM
 
 
 def train_model(config):

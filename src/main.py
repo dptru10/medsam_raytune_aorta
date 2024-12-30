@@ -2,7 +2,7 @@
 import os
 import argparse
 
-from train import run_tuning
+from src.train import run_tuning
 
 def main():
     # Example: parse any custom command line arguments

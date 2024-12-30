@@ -1,0 +1,25 @@
+# Core Python libraries
+numpy>=1.21.0
+scikit-learn>=1.0
+matplotlib>=3.4
+
+# Torch and related
+torch>=1.12
+torchvision>=0.13
+torchaudio>=0.12  # Only if you use it; can remove if not needed
+nrrd>=0.2.8
+tqdm>=4.64
+Pillow>=9.0
+
+# MONAI for medical-specific transforms, metrics, etc.
+monai>=1.0
+
+# Segment Anything
+segment-anything>=0.0.0  # No strict version on PyPI yet, may need direct install from GitHub
+
+# Ray for distributed training and hyperparameter tuning
+ray[air, tune]>=2.5.0
+
+# If you are using Python <3.9, you may also need "typing-extensions",
+# but Torch often bundles it. Uncomment if needed:
+# typing-extensions>=4.0
